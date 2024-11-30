@@ -1,5 +1,7 @@
 # Available parameters and their default values for the Vault chart.
-
+nodes:
+  node1:  k8sworker1-virtual-machine 
+  
 global:
   # enabled is the master enabled switch. Setting this to true or false
   # will enable or disable all the components within this chart by default.
@@ -611,8 +613,7 @@ server:
     annotations: {}
 
 
-nodes:
-  node1:  k8sworker1-virtual-machine
+
   # This configures the Vault Statefulset to create a PVC for audit
   # logs.  Once Vault is deployed, initialized and unsealed, Vault must
   # be configured to use this for audit logs.  This will be mounted to

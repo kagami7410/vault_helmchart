@@ -745,7 +745,7 @@ server:
       listener "tcp" {
         tls_disable = 1
         address = "127.0.0.1:8200"
-        cluster_address = "127.0.0.1:8201"
+        cluster_address = "[::]:8201"
       }
       storage "consul" {
         path = "vault"

@@ -1,7 +1,7 @@
 # Available parameters and their default values for the Vault chart.
 nodes:
   node1:  k8sworker1-virtual-machine 
-  
+
 global:
   # enabled is the master enabled switch. Setting this to true or false
   # will enable or disable all the components within this chart by default.
@@ -689,7 +689,7 @@ server:
   # different HA backend.
   ha:
     enabled: false
-    replicas: 3
+    replicas: 2
 
     # Set the api_addr configuration for Vault HA
     # See https://www.vaultproject.io/docs/configuration#api_addr

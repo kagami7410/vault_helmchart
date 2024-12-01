@@ -635,7 +635,7 @@ server:
   # use dev mode for anything other than experimenting.
   # See https://www.vaultproject.io/docs/concepts/dev-server.html to know more
   dev:
-    enabled: true
+    enabled: false
 
     # Set VAULT_DEV_ROOT_TOKEN_ID value
     devRootToken: "root"
@@ -684,8 +684,8 @@ server:
   # Helm project by default.  It is possible to manually configure Vault to use a
   # different HA backend.
   ha:
-    enabled: false
-    replicas: 3
+    enabled: true
+    replicas: 2
 
     # Set the api_addr configuration for Vault HA
     # See https://www.vaultproject.io/docs/configuration#api_addr

@@ -687,7 +687,7 @@ server:
   # different HA backend.
   ha:
     enabled: true
-    replicas: 2
+    replicas: 1
 
     # Set the api_addr configuration for Vault HA
     # See https://www.vaultproject.io/docs/configuration#api_addr

@@ -1,6 +1,6 @@
 # Available parameters and their default values for the Vault chart.
 nodes:
-  node1:  k8sworker1-virtual-machine 
+  node1: k8sworker1-virtual-machine 
 
 global:
   # enabled is the master enabled switch. Setting this to true or false

@@ -7,10 +7,9 @@ metadata:
 spec:
   storageClassName: local-storage
   claimRef:
-    name: 
-      - data-vault-0
-      - data-vault-1
-
+    name: data-vault-0
+  claimRef:
+    name: data-vault-1
   capacity:
     storage: 15Gi
   accessModes:

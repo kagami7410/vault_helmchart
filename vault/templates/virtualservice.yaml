@@ -1,0 +1,20 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: vault-virtual-service
+  namespace: vault
+spec:
+  hosts:
+  - "vault.sujantechden.uk"
+  gateways:
+  - istio-system/sujantechden-istio-ingress-gateway
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: vault.vault.svc.cluster.local
+        port:
+          number: 8200
+
